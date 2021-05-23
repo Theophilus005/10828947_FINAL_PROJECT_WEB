@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/auth.css">
+    <script src="../js/gsap.min.js"></script>
+</head>
+<body>
+    <div class="main">
+
+    <div class="left">
+        <div class="toast">
+            <h3>LOGIN/REGISTER</h3>
+        </div>
+        <div id="authLottie"></div>
+        <div id="loadingLottie"></div>
+    </div>
+
+    <!-- Sign In -->
+    <div  id="right">
+
+        <!-- Sign up -->
+        <div id="sign-up-form" class="sign-up-form-space">
+            
+            <form action="" class="sign-up-form">
+                <div id="sign-up-form-div">
+                <div class="sign-up-div">
+                <img class="user-plus-icon" src="../icons/svgs/user-plus.svg" alt="">
+                <h4 id="authType">SIGN UP</h4>
+            </div>
+                <!-- Username -->
+                <div class="name-div">
+                    <p class="name-label">Username</p>
+                    <div class="iconInput">                
+                        <img class="input-icon" src="../icons/svgs/user.svg" alt="">
+                    <input class="name-field" name="username" type="text">
+                </div>
+                </div>
+
+
+                <!-- Email -->
+                <div class="email-div">
+                <p class="email-label">Email</p>
+                <div class="iconInput">                
+                <img class="input-icon" src="../icons/svgs/envelope.svg" alt="">
+                <input class="email-field" name="email" type="text">
+            </div>
+            </div>
+
+                <!-- Password -->
+                <div class="password-div">
+                <div class="password-label-div">
+                    <p class="password-label">Password</p>
+                </div>
+                <div class="iconInput">                
+                <img class="input-icon" src="../icons/svgs/key.svg" alt="">
+                <input class="password-field" name="pass1" type="password">
+            </div>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="password-div">
+                <div class="password-label-div">
+                    <p class="confirm-password-label">Confirm Password</p>
+                </div>
+                <div class="iconInput">                
+                    <img class="input-icon" src="../icons/svgs/key.svg" alt="">                
+                <input class="confirm-password-field" name="pass2" type="password">
+            </div>
+            </div>
+
+
+                <div class="agreement-div">
+                <input type="checkbox" value="checked">
+                <span class="agreement-text">I have read the privacy policy and accepted the <a href="#" class="agreement-link">terms and conditions</a> </span>
+            </div>
+
+            <input type="button" onclick="signUp()" class="sign-button" value="SIGN UP">
+
+            <div class="alt-text-div"><p class="alt-text">OR</p></div>
+
+            <button class="google-button">
+                <div class="alt-button-content-div">
+                    <div class="icon-background">
+                    <img class="google-icon" src="../icons/google.png" alt="">
+                </div>
+                    <span>Sign up with google</span>
+                </div>
+            </button>
+
+            <button class="facebook-button">
+                <div class="alt-button-content-div">
+                    <div class="icon-background">
+                    <img class="facebook-icon" src="../icons/facebook.png" alt="">
+                    </div>
+                    <span>Sign in with facebook</span>
+                </div>
+            </button>
+            
+            <div class="null-account-div">
+                <a href="#" onclick="toggleAuth()" id="toggleAuth">Already Have An Account? Sign In</a>
+            </div>
+            </form>
+        </div>
+        </div>
+        </div>
+        
+
+        
+<script src="../js/lottie.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/gsap.min.js"></script>
+</body>
+</html>
